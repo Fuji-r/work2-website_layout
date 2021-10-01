@@ -117,6 +117,7 @@ li + li {
     .wrap2 {
         display: block;
         max-width: 400px;
+        margin-top: -5%;
     }
     .container {
         display: block;
