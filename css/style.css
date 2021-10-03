@@ -24,25 +24,20 @@ img {
     vertical-align: bottom;
     border: none;
 }
-font {
-    font-size: 62.5%;
-}
 
+header {
+}
 .wrap {
     display: flex;
     justify-content: space-between;
-    vertical-align: middle;
     max-width: 960px;
-    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .header p {
     font-size: 1.5rem;
-    margin: 15px 15px;
-}
-.gm {
-    margin-bottom: 20px;
-    background-color: beige;
+    padding-left: 30px;
 }
 .navi-list {
     display: flex;
@@ -59,7 +54,6 @@ li + li {
     border-left: 1px solid #4c4c4c;
 }
 .wrap2 {
-    margin: 0 auto;
     padding-bottom: 50px;
     background-color: #eeee;
 }
@@ -94,16 +88,17 @@ li + li {
         display: block;
         text-align: center;
         background-color: darkseagreen;
+        margin: 0 auto;
     }
     .header p {
         text-align: center;
         padding-top: 30px;
+        padding-left: 0;
     }
     .navi-list {
-        margin-top: 30px;
         display: block;
         padding: 10px 136px;
-        margin-bottom: 50px;
+        margin-bottom: 0;
     }
     .navi-list li {
         border-bottom: 1px solid #4c4c4c;
@@ -128,7 +123,6 @@ li + li {
     }
     .box p {
         font-size: 13px;
-        margin-bottom: 20px;
         padding-bottom: 5px;
     }
 }
