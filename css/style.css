@@ -1,16 +1,12 @@
 @charset "utf-8";
 
+html,
 body,
 h1,
 h2,
 h3,
 ul,
 li,
-img {
-    max-width: 100%;
-    vertical-align: bottom;
-    border: none;
-}
 p {
     margin: 0;
     margin: 0;
@@ -23,23 +19,31 @@ p {
         "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif,
         "ヒラノギ角ゴシック";
 }
-.header {
-    height: auto;
-    vertical-align: middle;
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
 }
+font {
+    font-size: 62.5%;
+}
+
 .wrap {
     display: flex;
     justify-content: space-between;
+    vertical-align: middle;
     max-width: 960px;
     margin: 0 auto;
-    height: auto;
 }
 
 .header p {
-    font-size: 20px;
+    font-size: 1.5rem;
     margin: 15px 15px;
 }
-
+.gm {
+    margin-bottom: 20px;
+    background-color: beige;
+}
 .navi-list {
     display: flex;
     justify-content: flex-end;
@@ -47,14 +51,14 @@ p {
 
 .navi-list li {
     list-style: none;
-    padding: 2px 12px;
+    padding: 6px 12px;
     font-size: 12px;
+    margin-bottom: 15px;
 }
 li + li {
     border-left: 1px solid #4c4c4c;
 }
 .wrap2 {
-    height: auto;
     margin: 0 auto;
     padding-bottom: 50px;
     background-color: #eeee;
@@ -62,7 +66,6 @@ li + li {
 .content-name h2 {
     text-align: center;
     padding: 20px;
-    height: auto;
     color: limegreen;
 }
 .container {
@@ -72,8 +75,7 @@ li + li {
     margin: 0 auto;
 }
 .box {
-    width: 300px;
-    height: auto;
+    width: 30%;
     background-color: #fff;
 }
 .box h3 {
@@ -84,27 +86,23 @@ li + li {
 }
 .box p {
     margin: 10px 12px;
-    line-height: 1.5;
+    line-height: 1.2;
 }
 /*画面幅が400px以下で縦に並べる*/
 @media screen and (max-width: 400px) {
     .wrap {
         display: block;
-        height: 210px;
         text-align: center;
-        padding-bottom: 20px;
-        margin-bottom: -13%;
-        background-color: #eeee;
+        background-color: darkseagreen;
     }
     .header p {
         text-align: center;
         padding-top: 30px;
     }
     .navi-list {
-        max-width: 400px;
         margin-top: 30px;
         display: block;
-        padding: 10px 140px;
+        padding: 10px 136px;
         margin-bottom: 50px;
     }
     .navi-list li {
@@ -115,19 +113,15 @@ li + li {
     }
     .wrap2 {
         display: block;
-        max-width: 400px;
-    }
-    .content-name h2 {
-        margin-top: 50px;
+        background-color: #eeee;
     }
     .container {
-        max-width: 400px;
         display: block;
     }
     .box {
         margin: 0 auto;
-        height: auto;
         margin-bottom: 30px;
+        width: 80%;
     }
     .box h3 {
         font-size: 16px;
